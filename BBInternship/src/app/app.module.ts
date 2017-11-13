@@ -16,7 +16,8 @@ import {AppComponent} from './app.component';
 import {HomeComponent} from "./home/home.component";
 import { NavComponent } from './nav/nav.component';
 import {AppRoutingModule} from "./app-routing.module";
-import { CriteriaComponent } from './criteria/criteria.component';
+import { CriteriaOverviewComponent } from './criteria-overview/criteria-overview.component';
+import { CriteriaDetailComponent } from './criteria-detail/criteria-detail.component';
 
 
 
@@ -26,7 +27,8 @@ import { CriteriaComponent } from './criteria/criteria.component';
     AppComponent,
     HomeComponent,
     NavComponent,
-    CriteriaComponent
+    CriteriaOverviewComponent,
+    CriteriaDetailComponent
   ],
   imports: [
     BrowserModule,
