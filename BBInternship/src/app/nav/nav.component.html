@@ -1,13 +1,22 @@
 <mat-toolbar color="primary">
-  <span><mat-icon>mood</mat-icon></span>
-
-  <span>It is simply, amazing!</span>
-
-  <button mat-icon-button [mat-menu-trigger-for]="menu">
-    <mat-icon>more_vert</mat-icon>
-  </button>
+  <mat-toolbar-row>
+    <a routerLink="/">Home</a>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-toolbar-row>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/criteria">
+      <mat-icon>thumb_up</mat-icon>
+      <span>Internship criteria</span>
+    </button>
+    <button mat-menu-item routerLink="/criteria">
+      <mat-icon>thumb_up</mat-icon>
+      <span>Internship criteria</span>
+    </button>
+    <button mat-menu-item routerLink="/criteria">
+      <mat-icon>thumb_up</mat-icon>
+      <span>Internship criteria</span>
+    </button>
+  </mat-menu>
 </mat-toolbar>
-<mat-menu x-position="before" #menu="matMenu">
-  <button mat-menu-item>Option 1</button>
-  <button mat-menu-item>Option 2</button>
-</mat-menu>

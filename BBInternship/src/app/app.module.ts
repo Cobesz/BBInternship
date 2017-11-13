@@ -5,7 +5,9 @@ import {
   MatMenuModule,
   MatToolbarModule,
   MatIconModule,
-  MatCardModule, MatCheckboxModule
+  MatCardModule,
+  MatCheckboxModule,
+  MatGridListModule
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -14,6 +16,8 @@ import {AppComponent} from './app.component';
 import {HomeComponent} from "./home/home.component";
 import { NavComponent } from './nav/nav.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { CriteriaComponent } from './criteria/criteria.component';
+
 
 
 
@@ -21,7 +25,8 @@ import {AppRoutingModule} from "./app-routing.module";
   declarations: [
     AppComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    CriteriaComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,8 @@ import {AppRoutingModule} from "./app-routing.module";
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
