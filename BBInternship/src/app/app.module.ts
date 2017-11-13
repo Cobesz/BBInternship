@@ -12,16 +12,20 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {AppComponent} from './app.component';
 import {HomeComponent} from "./home/home.component";
+import { NavComponent } from './nav/nav.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
